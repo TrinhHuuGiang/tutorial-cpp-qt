@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(first_open LANGUAGES CXX)
+project(_0001_qcoreapplication LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -12,13 +12,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
-add_executable(first_open
+add_executable(_0001_qcoreapplication
   main.cpp
 )
-target_link_libraries(first_open Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(_0001_qcoreapplication Qt${QT_VERSION_MAJOR}::Core)
 
 include(GNUInstallDirs)
-install(TARGETS first_open
+install(TARGETS _0001_qcoreapplication
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
