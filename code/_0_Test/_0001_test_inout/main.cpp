@@ -1,6 +1,6 @@
 // qt libs
 // choose library and click F1 for more information
-#include <QCoreApplication>
+// #include <QCoreApplication>
 #include <QTextStream>
 #include <QString>
 
