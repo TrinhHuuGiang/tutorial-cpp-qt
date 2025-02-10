@@ -29,6 +29,6 @@
 | `compare`                   |                     | `last`           | `toWCharArray` |             |
 | `localeAwareCompare`        | **Data Setting**    | `lastIndexOf`    | **Immutable Functions** |    |
 |                             | `setNum`            | `length`         | `chopped`     |              |
-|                             | `setRawData`        | `localeAwareCompare` |`constData` |             |
-|                             | `setUnicode`        | `mid`            | `sliced`      |              |
+|                             | `setRawData`        | `localeAwareCompare` | `sliced`  |              |
+|                             | `setUnicode`        | `mid`            |               |              |
 |                             | `setUtf16`          |                  |               |              |

@@ -1,7 +1,7 @@
 ## 1. **Cơ Bản về Qt và Ứng Dụng Terminal**
 ### 1.1. **Hệ thống lõi (QtCore)**
-- `QCoreApplication`: [Quản lý vòng lặp sự kiện (event loop)](./_0001_QCoreApplication.md)
-- `QString`: Xử lý chuỗi
+- `QCoreApplication`: [Quản lý vòng lặp sự kiện (event loop)](./_0003_QCoreApplication.md)
+- `QString`: [Xử lý chuỗi](./_0004_Qstring.md)
 - `QByteArray`: Quản lý dữ liệu nhị phân
 - `QVariant`: Lưu trữ kiểu dữ liệu đa dạng
 - `QDebug`: Ghi log và debug
