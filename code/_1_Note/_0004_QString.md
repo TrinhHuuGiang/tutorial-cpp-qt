@@ -1,4 +1,6 @@
 - [Documentation](https://doc.qt.io/qt-6.5/qstring.html#Iterator-typedef)
+- Perpose: QString is a string class that makes it easy to work with text, supports Unicode, provides useful functions for searching and modifying text, and manages memory efficiently.
+<hr>
 
 | **Constructor / Destructor** | **String Operations** | **Query / Check** | **Conversion** | **Operators** |
 |-----------------------------|----------------------|------------------|---------------|-------------|
