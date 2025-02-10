@@ -17,7 +17,7 @@
     - moveToThread |thread
     - parent |setParent
 
-    2.**Public Slots**
+    2. **Public Slots**
     - deleteLater
     
     3. **Signals**
