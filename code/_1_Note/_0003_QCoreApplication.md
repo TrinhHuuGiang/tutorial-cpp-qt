@@ -1,24 +1,42 @@
 ### Content
 - [About Class QCoreApplication](#qcoreapplication)
 - [some Member functions](#member-function)
+<<<<<<< HEAD
     1. **Public Functions**
+=======
+    1. Public Functions
+>>>>>>> 16c88ecc3d0c58cbea9a40725cb0e0086186e958
     - QCoreApplication |~QCoreApplication
     - checkPermission |requestPermission
     - installNativeEventFilter |removeNativeEventFilter
     - notify
 
+<<<<<<< HEAD
     2. **Public Slots**
     - exit
     - quit
     
     3. **Signals**
+=======
+    2. Public Slots
+    - exit
+    - quit
+    
+    3. Signals
+>>>>>>> 16c88ecc3d0c58cbea9a40725cb0e0086186e958
     - aboutToQuit
     - applicationNameChanged |applicationVersionChanged
     - organizationDomainChanged |organizationNameChanged
 
+<<<<<<< HEAD
     4. **Static Public Members**
     - addLibraryPath |libraryPaths |removeLibraryPath |setLibraryPaths
     - applicationDirPath |applicationFilePath |applicationName |applicationPid |applicationVersion |
+=======
+    4. Static Public Members
+    - addLibraryPath |libraryPaths |removeLibraryPath |setLibraryPaths
+    - applicationDirPath |applicationFilePath |applicationName |applicationPid |applicationVersion |  
+>>>>>>> 16c88ecc3d0c58cbea9a40725cb0e0086186e958
     setApplicationName |setApplicationVersion
     - arguments
     - closingDown |startingUp
