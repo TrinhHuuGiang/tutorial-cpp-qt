@@ -1,12 +1,45 @@
 ### Content
 - [About Class QCoreApplication](#qcoreapplication)
-- [Functions](#functions)
-    - [exec](#exec)
+- [some Member functions](#member-function)
+    1. Public Functions
+    - QCoreApplication |~QCoreApplication
+    - checkPermission |requestPermission
+    - installNativeEventFilter |removeNativeEventFilter
+    - notify
+
+    2. Public Slots
+    - exit
+    - quit
+    
+    3. Signals
+    - aboutToQuit
+    - applicationNameChanged |applicationVersionChanged
+    - organizationDomainChanged |organizationNameChanged
+
+    4. Static Public Members
+    - addLibraryPath |libraryPaths |removeLibraryPath |setLibraryPaths
+    - applicationDirPath |applicationFilePath |applicationName |applicationPid |applicationVersion |  
+    setApplicationName |setApplicationVersion
+    - arguments
+    - closingDown |startingUp
+    - eventDispatcher |setEventDispatcher
+    - exec
+    - installTranslator |removeTranslator |translate
+    - instance
+    - isQuitLockEnabled |setQuitLockEnabled
+    - isSetuidAllowed |setSetuidAllowed
+    - organizationDomain |organizationName |setOrganizationDomain |setOrganizationName
+    - postEvent |removePostedEvents |sendPostedEvents
+    - processEvents |sendEvent
+    - setAttribute |testAttribute
+    
 <hr>
 
 ### QCoreApplication
 - **References:**
     - [Documentation](https://doc.qt.io/qt-6.5/qcoreapplication.html)  
+
+- **Inherits**: QObject class
 
 - **Purpose:**
     - This class is used for non-GUI applications (console-based programs) to manage event (signals - slots) throughout run-time.  
@@ -20,7 +53,7 @@
     - When using a QObject, ensure that the QCoreApplication object is initialized first in the main() function.  
 <hr>
 
-### Functions
+### Member function
 ## exec()
 - Enters the main event loop to manage all event. Required for handling signals, slots, and event-driven programming.  
 - exit when call `exit(error code)` or `quit()` function after `exec()` has been started
