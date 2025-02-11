@@ -2,9 +2,9 @@
 ### 1.1. **Hệ thống lõi (QtCore)**
 - `QCoreApplication`: [Quản lý vòng lặp sự kiện (event loop)](./_0003_QCoreApplication.md)
 - `QString`: [Xử lý chuỗi](./_0004_Qstring.md)
-- `QByteArray`: Quản lý dữ liệu nhị phân
-- `QVariant`: Lưu trữ kiểu dữ liệu đa dạng
-- `QDebug`: Ghi log và debug
+- `QByteArray`: [Quản lý dữ liệu nhị phân](./_0005_QByteArray.md)
+- `QVariant`: [Lưu trữ kiểu dữ liệu đa dạng](./_0006_QVariant.md)
+- `QDebug`: [Ghi log và debug](./_0007_QDebug.md)
 
 ### 1.2. **Xử lý File và Dữ liệu**
 - `QFile`: Đọc/ghi file
