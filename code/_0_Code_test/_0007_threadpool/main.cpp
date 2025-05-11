@@ -95,5 +95,14 @@ int main(int argc, char *argv[])
 
     manager->work_start();
 
+    for(int i = 3; i>=1;i--)
+    {
+        qDebug() << "Delay" << i << "s" ;
+        QThread::currentThread()->sleep(1);
+    }
+
+    // start exec to run queued slot
+    qDebug()<< "===================================";
+
     return a.exec();
 }
