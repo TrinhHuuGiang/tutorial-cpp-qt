@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(_0001_qtwidgets_qdialog VERSION 0.1 LANGUAGES CXX)
+project(_0002_state_machine VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -9,49 +9,59 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Scxml) #<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Scxml) #<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 set(PROJECT_SOURCES
         main.cpp
         dialog.cpp
         dialog.h
+        dialog.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(_0001_qtwidgets_qdialog
+    qt_add_executable(_0002_state_machine
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        test_sig.h test_sig.cpp
-        dialog.ui
+        dialog_2.h dialog_2.cpp dialog_2.ui
+        ssm_dialog.scxml
+        handle_ssm.h handle_ssm.cpp
     )
 # Define target properties for Android with Qt 6 as:
-#    set_property(TARGET _0001_qtwidgets_qdialog APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#    set_property(TARGET _0002_state_machine APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(_0001_qtwidgets_qdialog SHARED
+        add_library(_0002_state_machine SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(_0001_qtwidgets_qdialog
+        add_executable(_0002_state_machine
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-target_link_libraries(_0001_qtwidgets_qdialog PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+target_link_libraries(_0002_state_machine PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Scxml #<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+)
+
+qt6_add_statecharts(_0002_state_machine #<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    ssm_dialog.scxml
+)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example._0001_qtwidgets_qdialog)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example._0002_state_machine)
 endif()
-set_target_properties(_0001_qtwidgets_qdialog PROPERTIES
+set_target_properties(_0002_state_machine PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -60,12 +70,12 @@ set_target_properties(_0001_qtwidgets_qdialog PROPERTIES
 )
 
 include(GNUInstallDirs)
-install(TARGETS _0001_qtwidgets_qdialog
+install(TARGETS _0002_state_machine
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(_0001_qtwidgets_qdialog)
+    qt_finalize_executable(_0002_state_machine)
 endif()

@@ -52,3 +52,4 @@ void Dialog::on_progressBar_2_valueChanged(int value)
     qDebug() << "changed"<< this->ui->progressBar_2 <<" [Current thread]" << QThread::currentThread();
 }
 
+

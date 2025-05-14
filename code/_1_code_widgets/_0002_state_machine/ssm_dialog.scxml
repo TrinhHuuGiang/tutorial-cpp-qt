@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" name="ssm_dialog" qt:editorversion="15.0.1" initial="init_dialog">
+    <qt:editorinfo initialGeometry="-107.81;400.05;-20;-20;40;40"/>
+    <state id="init_dialog">
+        <qt:editorinfo scenegeometry="169.28;400.05;-17.72;350.05;247;100" geometry="169.28;400.05;-187;-50;247;100"/>
+        <transition type="external" event="init_dialog_2" target="init_dialog_2">
+            <qt:editorinfo endTargetFactors="4.65;30.03" startTargetFactors="94.89;29.93"/>
+        </transition>
+    </state>
+    <state id="init_dialog_2">
+        <qt:editorinfo scenegeometry="548.80;400.05;349.80;350.05;259;100" geometry="548.80;400.05;-199;-50;259;100"/>
+        <transition type="external" event="init_dialog" target="init_dialog">
+            <qt:editorinfo endTargetFactors="93.37;78.98" startTargetFactors="5.49;80.31"/>
+        </transition>
+    </state>
+</scxml>

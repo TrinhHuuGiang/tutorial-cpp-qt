@@ -16,8 +16,9 @@
 
 // app
 #include <QScreen>
-#include <QApplication>
 #include <QRect>
+#include <QApplication>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
