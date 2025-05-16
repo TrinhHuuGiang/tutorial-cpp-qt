@@ -16,8 +16,20 @@
  *          so wrap it in a 'scroll area'
  *
  * B. Window 2 - introduce item view / item widgets
+ *  - List, table, tree view using display text data
+ *      + advantage: strong handle data from model
+ *  - List, table, tree widget using display text data + widget
+ *      + disadvantage: deploy data take vary large memory
+ *      + advantage:    dynamicaly add, manage object
+ *
  *  - List widget:
  *      + add any widget on it and interract by click
+ *      + List widget only accept item 'QListWidgetItem* or QString*' by 'insertItem'
+ *      + After add a 'QListWidgetItem*' we have a slot and bind a widget
+ *      with this slot then display by "setItemWidget" for listWidget
+ *      + 'QListWidgetItem*' support change display background,...
+ *      + While 'Widget' support UI
+ *
  *  - List view:
  *      + This is a part of MVC (Model - View - Control) model
  *      + You must have a model (QStringListModel)
@@ -36,9 +48,9 @@
  *         ~ With 'tree view'  only display parent-child of first column,
  *          other colum active like additive infomation.
  *
- * C. Window 3 - introduce containers
- * D. Window 4 - introduce input widgets
- * E. Window 5 - introduce display widgets
+ * C. Window 3 - introduce containers ( comming soon )
+ * D. Window 4 - introduce input widgets ( comming soon )
+ * E. Window 5 - introduce display widgets ( comming soon )
 ================================================================ */
 
 

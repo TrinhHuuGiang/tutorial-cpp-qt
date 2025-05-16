@@ -1,15 +1,22 @@
 #ifndef WINDOW_2_H
 #define WINDOW_2_H
 
-#include <QMainWindow>
-#include <QStandardItemModel>
-#include <QStandardItem>
-
 #include <QDebug>
 #include <QString>
 #include <QList>
 #include <QtAlgorithms>
 
+
+#include <QMainWindow>
+#include <QStandardItemModel>
+#include <QStandardItem>
+
+
+#include <QListWidgetItem>
+#include <QTableWidgetItem>
+#include <QTreeWidgetItem>
+
+#include <QPushButton>
 
 namespace Ui {
 class Window_2;
