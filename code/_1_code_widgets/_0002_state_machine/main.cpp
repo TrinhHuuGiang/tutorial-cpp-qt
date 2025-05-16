@@ -50,7 +50,7 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    QApplication a(argc, argv); // init construct for Qt system (argc,argv), init queue for exec, config sigal-slot system...
 
     handle_ssm ssm;
 
