@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 
+
+#include <QFrame>
+
 namespace Ui {
 class Window_3;
 }

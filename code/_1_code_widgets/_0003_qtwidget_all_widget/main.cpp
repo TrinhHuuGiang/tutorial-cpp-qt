@@ -48,9 +48,61 @@
  *         ~ With 'tree view'  only display parent-child of first column,
  *          other colum active like additive infomation.
  *
- * C. Window 3 - introduce containers ( comming soon )
+ * C. Window 3 - introduce containers
+ *  - 'Widget' is a basic container can contain other widget
+ *    Container is inheritd 'Widget' can contain:
+ *    + Layout (grid layout, form layout, horizonal layout, vertical layout)
+ *       + These 'layout' can contain other Widget
+ *    + Other Widget but not layout :) layout by coordinate
+ *
+ *  - Group Box:
+ *      + A container have a 'Title' at the top
+ *
+ *  - Scroll Area:
+ *      + A container when it child widgets have no more space display
+ *      it auto create scroll bar, help hide and show content
+ *
+ *  - Tool Box
+ *      + Show split content by choose Tag in Box
+ *      + Suggest wrap it in a Scroll Area because conten may be cut
+ *      it height not enough
+ *
+ *  - Tab Widget:
+ *      + like ToolBox but using horizontal tag layout
+ *
+ *  - Stacked widget:
+ *      + Switch between tab by => or <= cursor
+ *
+ *  - Frame widget:
+ *      + A container support modify Frame
+ *
+ *  - Widget:
+ *      + A simplest container
+ *
+ *  - MDI Area:
+ *      + you have a 'file.ui', compile it and add new display window here
+ *
+ *  - Dock Widget:
+ *      + A dock container, can drag, and close
+ *
+ *  - QAxWidget: ( :) ignore it, i'm noob )
+ *
  * D. Window 4 - introduce input widgets ( comming soon )
  * E. Window 5 - introduce display widgets ( comming soon )
+ *
+================================================================ */
+
+
+/* ================================================================
+ * Note content: Packaging and resource management
+ *
+ * - When build app, we need package all resource like (icon, image,
+ * document,... ) in 1 execute file.
+ * - Syntax: Add New -> Qt -> Qt Resource File -> get qrc file
+ *      + In resource file: click 'qrc' file -> 'Open with'
+ *      + Choose 'Resource editor' or 'Plain text editor'
+ *      + Use link: " : + <prefix> + <file name> "
+ *
 ================================================================ */
 
 
@@ -61,6 +113,7 @@
 
 #include "window_1.h"
 #include "window_2.h"
+#include "window_3.h"
 
 /* ================================================================
  * Main
@@ -71,11 +124,11 @@ int main(int argc, char *argv[])
     // Window_1 w;
     // w.show();
 
-    Window_2 w;
-    w.show();
-
-    // Window_3 w;
+    // Window_2 w;
     // w.show();
+
+    Window_3 w;
+    w.show();
 
     // Window_4 w;
     // w.show();

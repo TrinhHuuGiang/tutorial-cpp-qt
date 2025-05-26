@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         window_3.h window_3.cpp window_3.ui
         window_4.h window_4.cpp window_4.ui
         window_5.h window_5.cpp window_5.ui
+        resources.qrc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET _0003_qtwidget_all_widget APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

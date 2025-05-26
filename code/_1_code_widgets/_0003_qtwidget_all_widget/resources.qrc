@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/img_svg">
+        <file>resources/img_svg/people.svg</file>
+        <file>resources/img_svg/people_ellipsis.svg</file>
+        <file>resources/img_svg/people_question.svg</file>
+        <file>resources/img_svg/people_tick.svg</file>
+    </qresource>
+    <qresource prefix="/video_mp4"/>
+</RCC>

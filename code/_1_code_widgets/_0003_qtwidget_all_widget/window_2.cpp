@@ -1,6 +1,7 @@
 #include "window_2.h"
 #include "ui_window_2.h"
 
+
 Window_2::Window_2(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Window_2)
