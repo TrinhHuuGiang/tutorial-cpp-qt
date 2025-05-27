@@ -6,4 +6,8 @@
         <file>resources/img_svg/people_tick.svg</file>
     </qresource>
     <qresource prefix="/video_mp4"/>
+    <qresource prefix="/img_png">
+        <file>resources/img_png/airplane_wt.png</file>
+        <file>resources/img_png/airplane_bl.png</file>
+    </qresource>
 </RCC>

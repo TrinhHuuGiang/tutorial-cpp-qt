@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 
-
 #include <QFrame>
 
 namespace Ui {
@@ -17,6 +16,8 @@ class Window_3 : public QMainWindow
 public:
     explicit Window_3(QWidget *parent = nullptr);
     ~Window_3();
+
+    QString svgToBase64Png(const QString &svgPath);
 
 private:
     Ui::Window_3 *ui;

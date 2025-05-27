@@ -87,8 +87,30 @@
  *
  *  - QAxWidget: ( :) ignore it, i'm noob )
  *
+ *
  * D. Window 4 - introduce input widgets ( comming soon )
+ *  - Combo box:
+ *      + Copy any text item input and display
+ *      + Or refer to model text was prepared
+ *
+ *  - Font Combo box:
+ *      + Supply any available font in system
+ *      + Return QFont for modify any text object
+ *
+ *  - Line text edit:
+ *      + only 1 line edit
+ *      + plain text only
+ *
+ *  - Text edit:
+ *      + multiline text edit
+ *      + supported rich text (bold, italic, underline, color), HTML
+ *
+ *  - Plain text edit:
+ *      + multiline but plain text only
+ *
+ *  -
  * E. Window 5 - introduce display widgets ( comming soon )
+ *  -
  *
 ================================================================ */
 
@@ -101,7 +123,7 @@
  * - Syntax: Add New -> Qt -> Qt Resource File -> get qrc file
  *      + In resource file: click 'qrc' file -> 'Open with'
  *      + Choose 'Resource editor' or 'Plain text editor'
- *      + Use link: " : + <prefix> + <file name> "
+ *      + Use link: " : + <prefix> + <link to file> " <= check in .qrc file
  *
 ================================================================ */
 
@@ -114,6 +136,7 @@
 #include "window_1.h"
 #include "window_2.h"
 #include "window_3.h"
+#include "window_4.h"
 
 /* ================================================================
  * Main
@@ -121,17 +144,31 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    // == button
+
     // Window_1 w;
     // w.show();
+
+
+    // == item list
 
     // Window_2 w;
     // w.show();
 
-    Window_3 w;
+
+    // == container
+
+    // Window_3 w;
+    // w.show();
+
+
+    // == input widget
+
+    Window_4 w;
     w.show();
 
-    // Window_4 w;
-    // w.show();
+
+    // == display widget
 
     // Window_5 w;
     // w.show();

@@ -57,6 +57,9 @@
          </item>
          <item>
           <widget class="QGroupBox" name="groupBox">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 255, 255);</string>
+           </property>
            <property name="title">
             <string>Box1</string>
            </property>
@@ -88,7 +91,11 @@
           </widget>
          </item>
          <item>
-          <widget class="QWidget" name="widget" native="true"/>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 127);</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -118,6 +125,7 @@
             <attribute name="label">
              <string>Page 1</string>
             </attribute>
+            <layout class="QFormLayout" name="formLayout_2"/>
            </widget>
            <widget class="QWidget" name="page_2">
             <property name="geometry">
@@ -168,8 +176,11 @@
          </item>
          <item>
           <widget class="QTabWidget" name="tabWidget">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 255, 0);</string>
+           </property>
            <property name="currentIndex">
-            <number>1</number>
+            <number>0</number>
            </property>
            <widget class="QWidget" name="tab">
             <attribute name="title">
@@ -196,6 +207,9 @@
          </item>
          <item>
           <widget class="QStackedWidget" name="stackedWidget">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 255);</string>
+           </property>
            <property name="currentIndex">
             <number>0</number>
            </property>
