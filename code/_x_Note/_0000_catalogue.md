@@ -1,3 +1,6 @@
+<!-- :) Don't mind this is just a guide suggested by chatgpt -->
+<!-- :) Ignore this folder, it just some note in Qt Documentation -->
+
 ## 1. **Cơ Bản về Qt và Ứng Dụng Terminal**
 ### 1.1. **Hệ thống lõi (QtCore)**
 - `QCoreApplication`: [Quản lý vòng lặp sự kiện (event loop)](./_0003_QCoreApplication.md)

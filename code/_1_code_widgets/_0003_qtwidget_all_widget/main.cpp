@@ -71,7 +71,7 @@
  *      + like ToolBox but using horizontal tag layout
  *
  *  - Stacked widget:
- *      + Switch between tab by => or <= cursor
+ *      + Switch between tab by index
  *
  *  - Frame widget:
  *      + A container support modify Frame

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/csv">
+        <file>template_db/products-1000.csv</file>
+        <file>template_db/query_1.sql</file>
+        <file>template_db/template_db.db</file>
+    </qresource>
+</RCC>

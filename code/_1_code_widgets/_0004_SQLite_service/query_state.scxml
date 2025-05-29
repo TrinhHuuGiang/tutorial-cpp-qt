@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" qt:editorversion="15.0.1" name="query_state" initial="List_database">
+    <qt:editorinfo initialGeometry="-8.37;-90.61;-20;-20;40;40"/>
+    <parallel id="List_database">
+        <qt:editorinfo scenegeometry="255.35;-100.84;193.33;-136.69;649.70;426.35" geometry="255.35;-100.84;-62.02;-35.85;649.70;426.35"/>
+        <transition type="external" event="Clean_old_db" target="Clean_old_db">
+            <qt:editorinfo movePoint="51.78;17.89"/>
+        </transition>
+        <state id="Clean_old_db">
+            <qt:editorinfo scenegeometry="519.18;-17.28;450.68;-67.28;137;100" geometry="263.83;83.56;-68.50;-50;137;100"/>
+            <transition type="external" event="Copy_template_db" target="Copy_template_db"/>
+        </state>
+        <state id="Copy_template_db">
+            <qt:editorinfo scenegeometry="263.33;-14.60;203.33;-64.60;120;100" geometry="7.98;86.24;-60;-50;120;100"/>
+            <transition type="external" event="Transition_4" target="Update_db_list">
+                <qt:editorinfo movePointCond="57.62;-50.03"/>
+            </transition>
+            <transition type="external" event="Update_table_list" target="Update_table_list">
+                <qt:editorinfo movePoint="2.79;263.47" localGeometry="-137.87;-0.02;-137.87;460.50"/>
+            </transition>
+        </state>
+        <state id="Create_empty_db">
+            <qt:editorinfo scenegeometry="320.48;195.24;260.48;145.24;120;100" geometry="65.13;296.08;-60;-50;120;100"/>
+            <transition type="external" event="Update" target="Update_db_list">
+                <qt:editorinfo startTargetFactors="90.49;78.72" endTargetFactors="8.08;80.13"/>
+            </transition>
+        </state>
+        <state id="Update_db_list">
+            <qt:editorinfo scenegeometry="546.06;193.86;473.33;143.86;145.45;100" geometry="290.71;294.70;-72.73;-50;145.45;100"/>
+            <transition type="external" event="Create" target="Create_empty_db">
+                <qt:editorinfo movePoint="8.36;1.29" startTargetFactors="8.25;18.55" endTargetFactors="51.11;14.69"/>
+            </transition>
+            <transition type="external" event="Update_table_list" target="Update_table_list">
+                <qt:editorinfo movePoint="-22.85;63.79" movePointCond="11.15;19.52" localGeometry="-272.25;137.91"/>
+            </transition>
+        </state>
+    </parallel>
+    <state id="Update_table_list">
+        <qt:editorinfo scenegeometry="252.79;427.16;192.79;377.16;162.68;137.51" geometry="252.79;427.16;-60;-50;162.68;137.51"/>
+    </state>
+</scxml>
