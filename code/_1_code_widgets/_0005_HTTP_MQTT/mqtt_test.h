@@ -5,7 +5,6 @@
 
 #include <QObject>
 #include <QString>
-#include <QDebug>
 #include <QList>
 #include <QDateTime>
 

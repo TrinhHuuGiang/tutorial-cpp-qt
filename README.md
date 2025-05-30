@@ -10,7 +10,7 @@ This repository helps us quickly get familiar with Qt to write basic UI or conso
 - [QT Widget](./code/_1_code_widgets/)
     + state machine
     + widget
-    + sqlite service
+    + sqlite service (comming soon)
     + HTTP, MQTT
 
 ## Requirements

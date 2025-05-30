@@ -1,3 +1,7 @@
+// only test HTTP client, MQTT client
+// MQTT server : Hive MQ     (support mqtts, wss  pub-sub)
+// HTTP server : httpbin.org (support http, https request response)
+
 /* ======================================================================
  * MQTT:
  * A. Install
@@ -41,6 +45,11 @@
 
 /* ======================================================================
  * HTTP
+ *
+ * A. Project requirements
+ * - Libraries:
+ *      + QNetworkAccessManager
+ *
 ====================================================================== */
 
 
@@ -48,6 +57,7 @@
  * Definitions
 ====================================================================== */
 #include "mqtt_test.h"
+#include "http_test.h"
 
 #include <QApplication>
 
@@ -60,13 +70,16 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    QString host_url = "7b92f852aa7b4f20a563529b35a8bd79.s1.eu.hivemq.cloud";
-    QString user_name = "mqtt_qt";
-    QString pass_word = "A123456_abc";
-    int port_num = 8883;
+    // QString host_url = "7b92f852aa7b4f20a563529b35a8bd79.s1.eu.hivemq.cloud";
+    // QString user_name = "mqtt_qt";
+    // QString pass_word = "A123456_abc";
+    // int port_num = 8883;
+
+    // mqtt_test w(nullptr, host_url, user_name, pass_word, port_num, QMqttClient::MQTT_3_1_1);
+    // w.show();
 
 
-    mqtt_test w(nullptr, host_url, user_name, pass_word, port_num, QMqttClient::MQTT_3_1_1);
+    http_test w;
     w.show();
 
     return a.exec();
