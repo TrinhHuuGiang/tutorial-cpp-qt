@@ -1,3 +1,6 @@
+// Note: QT 6.5 only support Android 8.0 (API 26) to 15 (Api 35)
+// Refer: https://doc.qt.io/qt-6.5/android.html
+
 // only test HTTP client, MQTT client
 // MQTT server : Hive MQ     (support mqtts, wss  pub-sub)
 // HTTP server : httpbin.org (support http, https request response)

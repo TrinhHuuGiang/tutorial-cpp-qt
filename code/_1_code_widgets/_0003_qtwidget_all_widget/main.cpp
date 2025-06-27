@@ -158,14 +158,14 @@ int main(int argc, char *argv[])
 
     // == container
 
-    // Window_3 w;
-    // w.show();
+    Window_3 w;
+    w.show();
 
 
     // == input widget
 
-    Window_4 w;
-    w.show();
+    // Window_4 w;
+    // w.show();
 
 
     // == display widget

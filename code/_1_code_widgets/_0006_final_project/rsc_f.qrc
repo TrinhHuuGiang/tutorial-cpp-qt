@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/font">
+        <file>rsrc/Font/Roboto/static/Roboto-Regular.ttf</file>
+        <file>rsrc/Font/Roboto/static/Roboto-Bold.ttf</file>
+        <file>rsrc/Font/Roboto/static/Roboto-Italic.ttf</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>rsrc/Icon/feather/log-in.svg</file>
+        <file>rsrc/Icon/feather/wifi.svg</file>
+        <file>rsrc/Icon/feather/layers.svg</file>
+        <file>rsrc/Icon/feather/link.svg</file>
+        <file>rsrc/Icon/feather/radio.svg</file>
+        <file>rsrc/Icon/feather/server.svg</file>
+        <file>rsrc/Icon/feather/twitch.svg</file>
+        <file>rsrc/Icon/feather/arrow-left.svg</file>
+        <file>rsrc/Icon/feather/download-cloud.svg</file>
+        <file>rsrc/Icon/feather/thumbs-down.svg</file>
+        <file>rsrc/Icon/feather/thumbs-up.svg</file>
+        <file>rsrc/Icon/feather/tool.svg</file>
+    </qresource>
+</RCC>
