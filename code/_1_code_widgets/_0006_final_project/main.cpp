@@ -40,9 +40,11 @@
  * - Resource:
  *  + icon get from: https://feathericons.com/
  *  + font style Roboto: https://fonts.google.com/specimen/Roboto
+ *  + OpenSSL for android: https://doc.qt.io/qt-6.5/android-openssl-support.html
  *
  * - Tools
  *  + database manager: SQLite Studio
+ *
 ========================================================================== */
 
 /* ==========================================================================
@@ -54,7 +56,7 @@
 #include <QFontDatabase>            // set global font
 #include <QFont>
 #include <QString>
-
+#include <QDebug>
 
 // window app
 #include "_1_menuconfig.h"
@@ -67,6 +69,7 @@
 
 // define
 #include "z_widget_style.h"
+#include "z_global_db_connect.h"
 
 
 /* ==========================================================================
@@ -77,6 +80,7 @@ int main(int argc, char *argv[])
     // main variable
     QApplication a(argc, argv);
 
+    qDebug() << "app version: ["<<APP_VERSION<<"]";
 
 //======================================= App config
 

@@ -23,6 +23,12 @@
  *          + if set false, user can handle delete by code
  * C. Signals and Slots:
  * - 'qobject_cast'  support check signal input type
+ *
+ *
+ *
+ *
+ * - Qt::QueuedConnection : send a signal to slot and slot will queued in destination thread
+ * - Qt::Qt::DirectConnection: slot run immediate in this emit thread -> race conditon
  ==============================================================*/
 
 
@@ -81,6 +87,8 @@ int main(int argc, char *argv[])
 
     // signal
     qDebug()<< "===================================";
+    // Qt::QueuedConnection : send a signal to slot and slot will queued in destination thread
+    // Qt::Qt::DirectConnection: slot run immediate in this emit thread -> race conditon
     QObject::connect(manager.data(), manager->work_start_now, worker1.data(), worker1->work_start, Qt::QueuedConnection);
     QObject::connect(manager.data(), manager->work_start_now, worker2.data(), worker2->work_start, Qt::QueuedConnection);
     QObject::connect(manager.data(), manager->work_start_now, worker3.data(), worker3->work_start, Qt::QueuedConnection);

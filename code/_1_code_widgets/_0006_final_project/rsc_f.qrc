@@ -17,9 +17,12 @@
         <file>rsrc/Icon/feather/thumbs-down.svg</file>
         <file>rsrc/Icon/feather/thumbs-up.svg</file>
         <file>rsrc/Icon/feather/tool.svg</file>
+        <file>rsrc/Icon/feather/list.svg</file>
+        <file>rsrc/Icon/feather/settings.svg</file>
     </qresource>
     <qresource prefix="/database">
         <file>rsrc/Database/dev_board_designed.db</file>
         <file>rsrc/Database/query_create_table_designed_transaction.sql</file>
+        <file>rsrc/Database/app_net_service.db</file>
     </qresource>
 </RCC>

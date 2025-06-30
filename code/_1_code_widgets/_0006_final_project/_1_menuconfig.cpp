@@ -33,8 +33,11 @@
 #include "_1_menuconfig.h"
 #include "ui__1_menuconfig.h"
 
-#define ICON_SVG_LOGIN ":/icon/rsrc/Icon/feather/log-in.svg"
-#define ICON_SVG_BOARD_LAYER ":/icon/rsrc/Icon/feather/layers.svg"
+
+// icon
+#define ICON_SVG_MENU_LIST    ":/icon/rsrc/Icon/feather/settings.svg"
+#define ICON_SVG_LOGIN        ":/icon/rsrc/Icon/feather/log-in.svg"
+#define ICON_SVG_BOARD_LAYER  ":/icon/rsrc/Icon/feather/layers.svg"
 #define ICON_SVG_MQTT_LINK    ":/icon/rsrc/Icon/feather/link.svg"
 #define ICON_SVG_WIFI_CONNECT ":/icon/rsrc/Icon/feather/wifi.svg"
 
@@ -92,6 +95,15 @@ _1_menuconfig::_1_menuconfig(QWidget *parent)
     ui->btn_wifi_ud->setStyleSheet(BTN_STYLE_DESIGN);
     ui->fl_wifi_ud->setPixmap(renderSvgToPixmap(ICON_SVG_WIFI_CONNECT
                                                      ,fl_icon_df_size));
+
+
+
+    QSize fl_title_size = ui->fl_title->size();
+    fl_title_size.setWidth(fl_title_size.height()); // square
+
+    ui->fl_icon->setPixmap(renderSvgToPixmap(ICON_SVG_MENU_LIST
+                                                   ,fl_title_size));
+
 
 
 //==========================Inform Config ================
