@@ -262,7 +262,7 @@ _a_login_to_broker::_a_login_to_broker(QWidget *parent)
     }
 
 
-    // unconnect link to database
+    // disconnect link to database
     disconnectFromSQLiteDB(NET_SERVICE_INFORM_UNIQUE_CONNECT_A_LOGIN_PAGE);
 
 

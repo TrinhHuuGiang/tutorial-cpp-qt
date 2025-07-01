@@ -42,6 +42,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         _a_ltb_logic_block/_a_ltb_001_logic_base_map.h _a_ltb_logic_block/_a_ltb_001_logic_base_map.cpp
         _a_ltb_logic_block/_a_ltb_link_B0_DF_000_logic_bat_check.h _a_ltb_logic_block/_a_ltb_link_B0_DF_000_logic_bat_check.cpp
         _a_ltb_logic_block/_a_ltb_link_B0_DF_001_logic_au_test.h _a_ltb_logic_block/_a_ltb_link_B0_DF_001_logic_au_test.cpp
+        rsrc_code/http_path/_http_path.h
 
 
     )

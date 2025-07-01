@@ -45,7 +45,8 @@
 
 
 
-// db infor
+// ============================================================== db infor
+
 // net service db
 #define NET_SERVICE_INFORM_DB_LOCAL_PATH "/app_net_service.db"
 #define NET_SERVICE_INFORM_DB_RSRC_PATH  ":/database/rsrc/Database/app_net_service.db" //database
@@ -56,6 +57,22 @@
 // connect database of page a login to broker
 #define NET_SERVICE_INFORM_UNIQUE_CONNECT_A_LOGIN_PAGE "a_login_connect_nsi_db"
 
+
+
+
+// board designed db
+#define DEV_BOARD_DESIGNED_DB_LOCAL_PATH "/dev_board_designed.db"
+#define DEV_BOARD_DESIGNED_DB_RSRC_PATH  ":/database/rsrc/Database/dev_board_designed.db" //database
+
+#define DEV_BOARD_DESIGNED_TABLE_DEV_BOARD      "designed_dev_board" //table mqtt client info
+#define DEV_BOARD_DESIGNED_TABLE_LOGIC_BLOCK    "logic_code_block"
+#define DEV_BOARD_DESIGNED_TABLE_LINK_DB_LB     "link_lcb_with_dev_board"
+
+#define DEV_BOARD_DESIGNED_UNIQUE_CONNECT "connect_devboard_designed_db"
+
+
+// connect database of page a login to broker
+#define NET_SERVICE_INFORM_UNIQUE_CONNECT_A_LOGIN_PAGE "a_login_connect_nsi_db"
 
 
 
